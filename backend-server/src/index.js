@@ -65,8 +65,8 @@ app.use(errorHandler);
 
 async function init() {
 	await assertDatabaseConnectionOk();
-  // await sequelize.sync({ force: true});
-  // await fillDummyData();
+  	// await sequelize.sync({ force: true});
+  	// await fillDummyData();
 	console.log(`Starting Sequelize`);
 	app.listen(PORT, () => {
 		console.log(`Express server started on port ${PORT}.`);
